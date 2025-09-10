@@ -6,8 +6,8 @@ import time
 # --- Configuration ---
 VIDEOS_DIR = 'videos'
 ROI_SIZE = 300      # Size of the square region of interest
-NUM_VIDEOS_PER_SIGN = 50 # Number of videos to capture per sign
-VIDEO_LENGTH_FRAMES = 30 # Number of frames to record per video
+NUM_VIDEOS_PER_SIGN = 100 # Number of videos to capture per sign
+VIDEO_LENGTH_FRAMES = 50 # Number of frames to record per video
 
 def create_directory(path):
     """Creates a directory if it doesn't exist."""
@@ -99,3 +99,4 @@ def collect_videos():
 if __name__ == "__main__":
     create_directory(VIDEOS_DIR)
     collect_videos()
+
