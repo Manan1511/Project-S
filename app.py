@@ -84,7 +84,7 @@ def run_live_translation():
             else:
                 current_prediction = "..."
 
-        # Display the prediction
+        # Display the prediction of the dataset
         text = f"{current_prediction} ({confidence*100:.1f}%)"
         cv2.rectangle(frame, (x1, y1 - 40), (x2, y1), (0, 255, 0), -1)
         cv2.putText(frame, text, (x1 + 5, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
@@ -99,3 +99,4 @@ def run_live_translation():
 
 if __name__ == "__main__":
     run_live_translation()
+
